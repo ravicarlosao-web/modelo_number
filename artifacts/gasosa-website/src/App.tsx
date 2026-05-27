@@ -59,19 +59,8 @@ function Home() {
       >
         <div className="max-w-7xl mx-auto px-4 h-full flex items-center justify-between">
           {/* LEFT: Logo */}
-          <div className="flex items-center gap-3">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="2" y="4" width="20" height="16" rx="2" stroke="#1A1A2E" strokeWidth="2"/>
-              <path d="M2 6L12 13L22 6" stroke="#1A1A2E" strokeWidth="2"/>
-            </svg>
-            <div className="flex flex-col">
-              <span className="font-bold text-[#1A1A2E] leading-none text-lg">GASOSA</span>
-            </div>
-            <div className="w-[1px] h-8 bg-[#E5E7EB] mx-2"></div>
-            <div className="flex flex-col text-[10px] text-[#6B7280] font-medium leading-tight">
-              <span>AUTO |</span>
-              <span>AGRO</span>
-            </div>
+          <div className="flex items-center">
+            <img src="/gasosa-logo.png" alt="Gasosa Auto Agro" className="h-10 w-auto" />
           </div>
 
           {/* CENTER: Nav links (Desktop) */}
@@ -443,17 +432,8 @@ function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
             {/* COL 1 — Brand */}
             <div className="flex flex-col">
-              <div className="flex items-center gap-3 mb-4">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="2" y="4" width="20" height="16" rx="2" stroke="white" strokeWidth="2"/>
-                  <path d="M2 6L12 13L22 6" stroke="white" strokeWidth="2"/>
-                </svg>
-                <span className="font-bold text-white leading-none text-lg">GASOSA</span>
-                <div className="w-[1px] h-8 bg-[#333] mx-1"></div>
-                <div className="flex flex-col text-[10px] text-gray-400 font-medium leading-tight">
-                  <span>AUTO |</span>
-                  <span>AGRO</span>
-                </div>
+              <div className="flex items-center mb-4">
+                <img src="/gasosa-logo.png" alt="Gasosa Auto Agro" className="h-9 w-auto brightness-0 invert" />
               </div>
               <p className="text-[13px] text-gray-400 mb-6">Soluções industriais e agrícolas</p>
               <div className="flex items-center gap-3">
