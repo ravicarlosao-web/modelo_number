@@ -135,38 +135,36 @@ function Home() {
               </button>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-8 sm:gap-0 items-center justify-center w-full max-w-[800px]">
-              <div className="flex items-center gap-3 justify-center sm:w-[220px]">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#003DA5" strokeWidth="2">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full mt-4 border-t border-[#E5E7EB] pt-8">
+              <div className="flex items-center gap-4 justify-center sm:justify-start px-6 py-4">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#003DA5" strokeWidth="2" className="shrink-0">
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                 </svg>
-                <div className="flex flex-col text-left">
-                  <span className="font-bold text-[12px] text-[#1A1A2E]">QUALIDADE CERTIFICADA</span>
-                  <span className="text-[11px] text-[#6B7280] leading-tight mt-0.5">Produtos certificados e parceiros globais.</span>
+                <div className="flex flex-col">
+                  <span className="font-bold text-[13px] text-[#1A1A2E]">QUALIDADE CERTIFICADA</span>
+                  <span className="text-[12px] text-[#6B7280] leading-snug mt-1">Produtos certificados e parceiros globais.</span>
                 </div>
               </div>
-              <div className="hidden sm:block w-[1px] h-[40px] bg-[#E5E7EB] mx-8"></div>
-              <div className="flex items-center gap-3 justify-center sm:w-[220px]">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#003DA5" strokeWidth="2">
+              <div className="flex items-center gap-4 justify-center sm:justify-start px-6 py-4 sm:border-l sm:border-r border-[#E5E7EB]">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#003DA5" strokeWidth="2" className="shrink-0">
                   <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
                   <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
                 </svg>
-                <div className="flex flex-col text-left">
-                  <span className="font-bold text-[12px] text-[#1A1A2E]">APOIO ESPECIALIZADO</span>
-                  <span className="text-[11px] text-[#6B7280] leading-tight mt-0.5">Equipa técnica pronta para apoiar.</span>
+                <div className="flex flex-col">
+                  <span className="font-bold text-[13px] text-[#1A1A2E]">APOIO ESPECIALIZADO</span>
+                  <span className="text-[12px] text-[#6B7280] leading-snug mt-1">Equipa técnica pronta para apoiar.</span>
                 </div>
               </div>
-              <div className="hidden sm:block w-[1px] h-[40px] bg-[#E5E7EB] mx-8"></div>
-              <div className="flex items-center gap-3 justify-center sm:w-[220px]">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#003DA5" strokeWidth="2">
+              <div className="flex items-center gap-4 justify-center sm:justify-start px-6 py-4">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#003DA5" strokeWidth="2" className="shrink-0">
                   <rect x="1" y="3" width="15" height="13"/>
                   <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
                   <circle cx="5.5" cy="18.5" r="2.5"/>
                   <circle cx="18.5" cy="18.5" r="2.5"/>
                 </svg>
-                <div className="flex flex-col text-left">
-                  <span className="font-bold text-[12px] text-[#1A1A2E]">ENTREGA EFICIENTE</span>
-                  <span className="text-[11px] text-[#6B7280] leading-tight mt-0.5">Logística ágil e segura em todo o país.</span>
+                <div className="flex flex-col">
+                  <span className="font-bold text-[13px] text-[#1A1A2E]">ENTREGA EFICIENTE</span>
+                  <span className="text-[12px] text-[#6B7280] leading-snug mt-1">Logística ágil e segura em todo o país.</span>
                 </div>
               </div>
             </div>
