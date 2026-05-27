@@ -172,16 +172,6 @@ function Home() {
             </div>
           </div>
 
-          {/* RIGHT COLUMN */}
-          <div className="w-full md:w-[40%] mt-12 md:mt-0 relative flex justify-center md:justify-end">
-            <div className="absolute inset-y-0 right-0 left-8 bg-[#E8F0FF] rounded-tl-[80px] rounded-bl-[40px] z-0"></div>
-            <img 
-              src="/hero-technician.jpeg" 
-              alt="Técnico Gasosa Auto Agro" 
-              className="relative z-10 object-cover w-full max-w-[460px] h-[500px] rounded-lg"
-              style={{ objectPosition: "center top" }}
-            />
-          </div>
         </div>
       </section>
 
