@@ -1,0 +1,249 @@
+Build a complete, pixel-perfect single-page website for "Gasosa Auto Agro", 
+an Angolan industrial and agricultural solutions company. 
+
+I am attaching a wireframe image — follow it EXACTLY, section by section, 
+reproducing the layout, structure, spacing, and content precisely as shown.
+
+---
+
+## TECH STACK
+- Pure HTML5 + CSS3 + Vanilla JavaScript (single file: index.html)
+- Google Fonts: use "Inter" for body, "Poppins" for headings
+- No external frameworks. No Bootstrap. Custom CSS only.
+- Fully responsive (mobile, tablet, desktop)
+
+---
+
+## COLOR PALETTE (strict)
+- Primary Blue: #003DA5
+- Accent Blue: #0057D8
+- Light Blue (hover): #1A6FFF
+- White: #FFFFFF
+- Light Gray background: #F5F7FA
+- Dark text: #1A1A2E
+- Medium gray text: #6B7280
+- Border/divider: #E5E7EB
+
+---
+
+## SECTION 1 — HEADER (fixed, sticky top)
+- White background, subtle bottom border (#E5E7EB), height ~70px
+- LEFT: Logo — envelope icon + "GASOSA" bold dark text + "AUTO | AGRO" 
+  small text in a vertical divider layout
+- CENTER: Horizontal navigation links (font-size 13px, uppercase, 
+  letter-spacing 1px, color #1A1A2E):
+  QUEM SOMOS | SECTORES ▾ | INFRAESTRUTURAS | PARCEIROS | CONTACTOS
+  (SECTORES has a dropdown arrow)
+- RIGHT: Language selector "PT ▾" with a small globe or flag icon
+- On hover: nav links turn Primary Blue (#003DA5)
+- Position: fixed, z-index 1000, full width
+
+---
+
+## SECTION 2 — HERO / BANNER PRINCIPAL
+- Full width, white background, min-height 90vh
+- TWO COLUMNS layout (60% left / 40% right)
+
+LEFT COLUMN:
+- Small tag above heading: "SOLUÇÕES INDUSTRIAIS E AGRÍCOLAS" 
+  (uppercase, 12px, Primary Blue, with a short blue line before it)
+- H1 heading (48px, bold, dark #1A1A2E, line-height 1.2):
+  "Referência angolana" (dark color)
+  "no sector automóvel" — word "automóvel" in Accent Blue (#0057D8)
+  "e agrícola." — word "agrícola." in Accent Blue (#0057D8)
+- Paragraph subtitle (16px, gray #6B7280, max-width 480px):
+  "Qualidade e confiança para quem impulsiona Angola — 
+   nos campos, nas estradas e nas indústrias."
+- Horizontal divider short line (2px, Primary Blue, width 40px)
+- TWO CTA BUTTONS side by side:
+  1. "SOLICITAR COTAÇÃO →" — filled button, bg #003DA5, white text, 
+     border-radius 4px, padding 14px 28px, bold
+  2. "CONHECER SECTORES →" — outlined button, border 2px solid #003DA5, 
+     blue text, same size
+- Below buttons: 3 small trust badges in a row (icon + bold title + 
+  small description), separated by vertical dividers:
+  1. Shield icon | "QUALIDADE CERTIFICADA" | "Produtos certificados e parceiros globais."
+  2. Headset icon | "APOIO ESPECIALIZADO" | "Equipa técnica pronta para apoiar."
+  3. Truck icon | "ENTREGA EFICIENTE" | "Logística ágil e segura em todo o país."
+
+RIGHT COLUMN:
+- Display the attached image (the man in uniform / technician) 
+  positioned to the right, slightly overlapping bottom, 
+  with a very light blue geometric background shape behind it.
+- The image should fill the right column naturally, 
+  object-fit: contain, no crop on the face.
+
+---
+
+## SECTION 3 — SOLUÇÕES POR INDÚSTRIA
+- Background: white
+- Centered small tag: "OS NOSSOS SECTORES" (Primary Blue, uppercase, 12px)
+- H2: "Soluções completas para diferentes indústrias" 
+  (36px, bold, centered, dark)
+- 5 EQUAL CARDS in a horizontal row (flex, gap 16px):
+  Each card: white bg, 1px border #E5E7EB, border-radius 12px, 
+  padding 24px, hover shadow effect, cursor pointer
+
+  Card 1 — Automóvel
+    Icon: car/vehicle SVG outline (top left)
+    Title: "Automóvel" (bold, 18px)
+    Text: "Peças, acessórios e soluções para veículos leves e pesados."
+    Bottom: illustration of a car (light gray outline style)
+    Arrow "→" at the bottom left
+
+  Card 2 — Agrícola
+    Icon: leaf SVG
+    Title: "Agrícola"
+    Text: "Equipamentos, máquinas e insumos para o sector agrícola."
+    Bottom: illustration of a tractor
+    Arrow "→"
+
+  Card 3 — Importação
+    Icon: box/package SVG
+    Title: "Importação"
+    Text: "Sourcing global e logística internacional com eficiência e segurança."
+    Bottom: illustration of a cargo ship
+    Arrow "→"
+
+  Card 4 — Equipamentos
+    Icon: gear/settings SVG
+    Title: "Equipamentos"
+    Text: "Soluções industriais e equipamentos para diversos sectores."
+    Bottom: illustration of industrial equipment
+    Arrow "→"
+
+  Card 5 — Logística
+    Icon: delivery truck SVG
+    Title: "Logística"
+    Text: "Armazenagem, distribuição e transporte com cobertura nacional."
+    Bottom: illustration of a truck
+    Arrow "→"
+
+- On card hover: border becomes Primary Blue, slight translateY(-4px) animation
+
+---
+
+## SECTION 4 — NÚMEROS E CREDENCIAIS
+- Background: #F5F7FA (light gray)
+- 4 STATS in a horizontal row, centered, equal width
+- Each stat: large icon (outline style, Primary Blue), 
+  a "+" prefix in Primary Blue, bold large number (40px), 
+  bold uppercase label, small gray description
+
+  Stat 1: People icon | + | "ANOS DE EXPERIÊNCIA" | "No mercado angolano"
+  Stat 2: Building icon | + | "CLIENTES" | "Empresas que confiam nas nossas soluções"
+  Stat 3: Location pin icon | + | "PROVÍNCIAS" | "Presença e cobertura em todo o país."
+  Stat 4: Box icon | + | "PRODUTOS" | "Portfólio completo para diversos sectores"
+
+- Numbers animate counting up on scroll (JavaScript IntersectionObserver)
+  Use placeholder numbers: 15+, 500+, 18+, 2000+
+
+---
+
+## SECTION 5 — INFRAESTRUTURAS
+- Background: white
+- Centered small tag: "INFRAESTRUTURAS" (Primary Blue, uppercase, 12px)
+- H2: "Estrutura sólida para entregar mais valor" (36px, bold, centered)
+- 4 EQUAL CARDS in a horizontal row:
+  Each card: light gray bg #F5F7FA, border-radius 12px, overflow hidden
+  TOP: image placeholder area (gray crosshatch pattern, height 180px, 
+       with an X drawn across it in gray lines — mimicking wireframe boxes)
+  BOTTOM: 
+    Title (bold, 16px, dark)
+    Description (14px, gray)
+
+  Card 1: "Armazéns Modernos" | "Espaços amplos e seguros para armazenagem de produtos."
+  Card 2: "Oficinas Especializadas" | "Serviços técnicos com profissionais qualificados e tecnologia avançada."
+  Card 3: "Frota Própria" | "Transporte eficiente para garantir entrega rápida e segura."
+  Card 4: "Presença Nacional" | "Estratégia de expansão contínua para estar mais perto de si."
+
+---
+
+## SECTION 6 — PARCEIROS / MARCAS
+- Background: white, top border #E5E7EB
+- Small centered label: "PARCEIROS QUE CONFIAM EM NÓS" 
+  (uppercase, 12px, Primary Blue, centered)
+- Horizontal row of 7 partner logo placeholders:
+  Gray rounded rectangle boxes (150px × 60px each), 
+  evenly spaced with flex justify-content: space-around
+  Light gray background #F0F0F0, border-radius 8px
+  Subtle hover: border 1px solid #003DA5
+
+---
+
+## SECTION 7 — CHAMADA FINAL CTA
+- Background: Primary Blue #003DA5, full width
+- Padding: 60px 0
+- TWO COLUMNS:
+  LEFT (70%):
+    - Chat bubble icon (white, large, ~48px) on the far left
+    - H2: "Vamos encontrar a solução ideal para o seu negócio." 
+      (white, 28px, bold)
+    - Subtitle: "A nossa equipa está pronta para apresentar a melhor solução para si."
+      (white, opacity 0.85, 16px)
+  RIGHT (30%):
+    - Large white CTA button: "FALAR COM A NOSSA EQUIPA →"
+      (blue text #003DA5, white bg, bold, padding 16px 32px, border-radius 4px)
+    - On hover: bg #E8F0FF
+
+---
+
+## SECTION 8 — FOOTER
+- Background: #1A1A2E (very dark navy)
+- 4 COLUMNS layout:
+
+  COLUMN 1 — Brand:
+    Logo (same as header but white version)
+    Tagline: "Soluções industriais e agrícolas" (gray, small)
+    Social icons row: Facebook, LinkedIn, Instagram, YouTube 
+    (white circle outline icons, 32px each)
+
+  COLUMN 2 — LINKS RÁPIDOS (white bold heading):
+    List items (gray, 14px, hover white):
+    Quem Somos | Sectores | Infraestruturas | Parceiros | Contactos
+
+  COLUMN 3 — SECTORES (white bold heading):
+    Automóvel | Agrícola | Importação | Equipamentos | Logística
+
+  COLUMN 4 — CONTACTOS (white bold heading):
+    Phone icon + number placeholder
+    WhatsApp icon + number placeholder
+    Email icon + email placeholder
+    Location pin + "Luanda, Angola"
+
+  COLUMN 5 — NEWSLETTER (white bold heading):
+    "Subscreva para receber novidades e informações da Gasosa Auto Agro."
+    Email input (dark bg, white border, placeholder "O seu email") 
+    + Submit arrow button (blue bg #003DA5) inline
+
+- Bottom bar (border-top #333, padding 20px 0):
+  LEFT: "© 2024 Gasosa Auto Agro. Todos os direitos reservados."
+  RIGHT: "Política de Privacidade | Termos de Uso" (links, gray)
+
+---
+
+## RESPONSIVE BEHAVIOR
+- Below 1024px: cards become 2-column grid
+- Below 768px: hero becomes single column (image hidden or below text),
+  nav becomes hamburger menu with slide-in drawer,
+  stats become 2x2 grid, footer becomes stacked single column
+
+---
+
+## ANIMATIONS & INTERACTIONS
+- Smooth scroll between sections (scroll-behavior: smooth)
+- Header adds box-shadow on scroll (JavaScript)
+- Cards: hover translateY(-4px) + shadow transition (0.3s ease)
+- Stats: count-up animation on scroll using IntersectionObserver
+- CTA buttons: hover scale(1.03) transition
+- All transitions: 0.3s ease
+
+---
+
+## IMPORTANT NOTES
+- The attached image shows the wireframe/mockup — follow the layout exactly
+- Where the wireframe shows an "X" in the hero section, 
+  use the attached photo of the man in uniform as the actual image
+- All text content must be in Portuguese (PT)
+- The site must feel professional, clean, and corporate
+- Use SVG icons inline (no icon libraries) for performance
