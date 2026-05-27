@@ -106,27 +106,27 @@ function Home() {
 
       {/* SECTION 2 — HERO BANNER */}
       <section className="w-full bg-white relative overflow-hidden" style={{ minHeight: "90vh", paddingTop: "70px" }}>
-        <div className="max-w-7xl mx-auto w-full px-4 flex flex-col md:flex-row items-stretch" style={{ minHeight: "calc(90vh - 70px)" }}>
-          {/* LEFT COLUMN */}
-          <div className="w-full md:w-[60%] pr-0 md:pr-12 flex flex-col items-start justify-center z-10 py-16">
-            <div className="flex items-center gap-2 mb-6">
+        <div className="max-w-4xl mx-auto w-full px-4 flex flex-col items-center justify-center text-center" style={{ minHeight: "calc(90vh - 70px)" }}>
+          {/* CENTER CONTENT */}
+          <div className="w-full flex flex-col items-center z-10 py-16">
+            <div className="flex items-center justify-center gap-2 mb-6">
               <div className="w-6 h-[2px] bg-[#003DA5]"></div>
               <span className="text-[12px] uppercase text-[#003DA5] font-bold tracking-wider">SOLUÇÕES INDUSTRIAIS E AGRÍCOLAS</span>
             </div>
             
-            <h1 className="font-['Poppins'] text-[40px] md:text-[48px] font-bold leading-[1.2] text-[#1A1A2E] mb-6">
+            <h1 className="font-['Poppins'] text-[40px] md:text-[52px] font-bold leading-[1.2] text-[#1A1A2E] mb-6">
               Referência angolana<br/>
               no sector <span className="text-[#0057D8]">automóvel</span><br/>
               e <span className="text-[#0057D8]">agrícola.</span>
             </h1>
             
-            <p className="text-[16px] text-[#6B7280] max-w-[480px] mb-8">
+            <p className="text-[16px] text-[#6B7280] max-w-[560px] mb-8">
               Qualidade e confiança para quem impulsiona Angola — nos campos, nas estradas e nas indústrias.
             </p>
             
             <div className="w-[40px] h-[2px] bg-[#003DA5] mb-8"></div>
             
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 mb-12 justify-center">
               <button className="bg-[#003DA5] text-white px-7 py-[14px] rounded-[4px] font-bold text-[14px] hover:scale-105 transition-transform duration-300">
                 SOLICITAR COTAÇÃO →
               </button>
@@ -135,7 +135,7 @@ function Home() {
               </button>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-6 sm:gap-0 items-start sm:items-center w-full">
+            <div className="flex flex-col sm:flex-row gap-6 sm:gap-0 items-center justify-center w-full">
               <div className="flex items-center gap-3 flex-1">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#003DA5" strokeWidth="2">
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
