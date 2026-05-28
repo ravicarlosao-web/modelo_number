@@ -50,7 +50,9 @@ export default defineConfig({
   },
   root: path.resolve(import.meta.dirname),
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist"),
+    outDir: isBuild && !isReplit
+      ? path.resolve(import.meta.dirname, "../../dist-web")
+      : path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
   },
   server: {
