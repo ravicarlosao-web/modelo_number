@@ -5,7 +5,6 @@ import path from "path";
 
 const isReplit = !!process.env.REPL_ID;
 const isBuild = process.argv.includes("build");
-
 const rawPort = process.env.PORT;
 const port = rawPort ? Number(rawPort) : 3000;
 const basePath = process.env.BASE_PATH ?? "/";
@@ -13,7 +12,6 @@ const basePath = process.env.BASE_PATH ?? "/";
 if (isReplit && !isBuild && !process.env.PORT) {
   throw new Error("PORT environment variable is required but was not provided.");
 }
-
 if (isReplit && !isBuild && !process.env.BASE_PATH) {
   throw new Error("BASE_PATH environment variable is required but was not provided.");
 }

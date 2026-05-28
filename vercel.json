@@ -1,6 +1,6 @@
 {
   "buildCommand": "BASE_PATH=/ pnpm --filter @workspace/gasosa-website run build",
-  "outputDirectory": "dist-web",
+  "outputDirectory": "artifacts/gasosa-website/dist",
   "installCommand": "pnpm install --no-frozen-lockfile",
   "framework": null,
   "rewrites": [
