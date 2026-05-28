@@ -1,4 +1,8 @@
 {
+  "buildCommand": "cd ../.. && BASE_PATH=/ pnpm --filter @workspace/gasosa-website run build",
+  "outputDirectory": "dist",
+  "installCommand": "cd ../.. && pnpm install",
+  "framework": null,
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
